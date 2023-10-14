@@ -18,7 +18,7 @@ const About = () => {
             <div className="md:flex justify-center gap-20 pb-20 px-4"> 
             {/* who are we */}
             <div className="flex-1">
-                <h1>who are we?</h1> 
+                <h1 className="logo">who are we?</h1> 
 
                 <p className="my-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aliquid labore alias facere nesciunt, iusto non similique iure eos quia corrupti? Ex explicabo deserunt delectus ea totam eligendi, cumque, numquam quam recusandae quo, tempore magnam. Et eum explicabo tempore voluptatibus veritatis consequatur illo maxime! Dolorum, repellendus ab dicta, ratione adipisci 
                 <br />
@@ -30,7 +30,7 @@ const About = () => {
             </div>
             {/* who are we */}
             <div className="flex-1">
-                <h1>who are we?</h1> 
+                <h1 className="logo">who are we?</h1> 
 
                 <p className="my-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aliquid labore alias facere nesciunt, iusto non similique iure eos quia corrupti? Ex explicabo deserunt delectus ea totam eligendi, cumque, numquam quam recusandae quo, tempore magnam. Et eum explicabo tempore voluptatibus veritatis consequatur illo maxime! Dolorum, repellendus ab dicta, ratione adipisci facere molestias 
                 <br /> 

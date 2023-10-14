@@ -13,7 +13,7 @@ export default function Home() {
     </div>
 
     <div className="md:w-1/2 flex items-center  justify-end">
-      <Image src="/home1.png" width={800} height={20} alt="home banner"></Image>
+      <Image className="animation" src="/home1.png" width={800} height={20} alt="home banner"></Image>
     </div>
   </div>;
 }

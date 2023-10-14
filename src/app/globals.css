@@ -44,3 +44,16 @@ p {
   background-size: cover;
   background-position: center;
 }
+
+.animation{
+  animation: move 3s infinite ease-in-out alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(-15px);
+  }
+  to{
+    transform: translateY(0) ;
+  }
+}
