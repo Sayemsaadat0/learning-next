@@ -1,12 +1,27 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities; 
+@tailwind utilities;
 
-p{
+*{
+  font-family:Arial, Helvetica, sans-serif ;
+}
+h1 {
+  font-size: xx-large;
+  font-weight: 800;
+}
+h2 {
+  font-size: x-large;
+  font-weight: 700;
+}
+h3 {
+  font-size: larger;
+  font-weight: 600;
+}
+
+p {
   font-size: large;
 }
 ::selection {
   color: white;
   background-color: salmon;
-} 
-
+}
