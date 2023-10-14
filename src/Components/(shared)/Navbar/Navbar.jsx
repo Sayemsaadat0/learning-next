@@ -5,8 +5,8 @@ import { useState } from "react";
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false);
     return (
-        <nav className="w-full bg-white ">
-            <div className="justify-between mx-auto  md:items-center md:flex px-4">
+        <nav className="w-full bg-white">
+            <div className="justify-between mx-auto md:items-center md:flex px-4">
                 <div>
                     <div className="flex items-center justify-between py-3  md:block">
                         <div href="javascript:void(0)">
