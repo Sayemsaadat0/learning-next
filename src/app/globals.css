@@ -25,3 +25,14 @@ p {
   color: white;
   background-color: salmon;
 }
+
+
+/* navbar logo design */
+.logo{
+  background-image: url('https://i.pinimg.com/736x/bc/ac/a6/bcaca611921b9c4307d835ec3d0745aa.jpg') ;
+  background-clip: text; 
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: cover;
+  background-position: center;
+}
