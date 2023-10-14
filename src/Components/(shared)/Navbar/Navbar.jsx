@@ -14,7 +14,7 @@ const Navbar = () => {
                         </div>
                         <div className="md:hidden">
                             <button
-                                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                                className="p-2 rounded-md outline-none focus:border-gray-400 focus:border"
                                 onClick={() => setNavbar(!navbar)}  >
                                 {navbar ? (
                                     <svg
@@ -54,19 +54,19 @@ const Navbar = () => {
                         className={`flex-1 justify-self-center pb-3  md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
                             }`}  >
                         <ul className="items-center justify-center space-y-4 md:flex md:space-x-6 md:space-y-0 md:flex-row ">
-                            <li><Link href="/" className="text-gray-600 hover:text-[#35bdcd]">
+                            <li><Link href="/" className="hover:text-[#35bdcd]">
                                 Home
                             </Link></li>
-                            <li><Link href="/blog" className="text-gray-600 hover:text-[#35bdcd]">
+                            <li><Link href="/blog" className="hover:text-[#35bdcd]">
                                 Blog
                             </Link></li>
-                            <li><Link href="/" className="text-gray-600 hover:text-[#35bdcd]">
+                            <li><Link href="/" className="hover:text-[#35bdcd]">
                                 About
                             </Link></li>
-                            <li><Link href="/" className="text-gray-600 hover:text-[#35bdcd]">
+                            <li><Link href="/contact" className="hover:text-[#35bdcd]">
                                 Contact
                             </Link></li>
-                            <li><Link href="/" className="text-gray-600 hover:text-[#35bdcd]">
+                            <li><Link href="/" className="hover:text-[#35bdcd]">
                                 Dashboard
                             </Link></li>
 

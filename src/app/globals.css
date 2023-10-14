@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  font-family:Arial, Helvetica, sans-serif ;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
   font-size: xx-large;
@@ -23,14 +23,23 @@ p {
 }
 ::selection {
   color: white;
-  background-color: salmon;
+  background-color: #35bdcd;
 }
 
+.Pagecss {
+  width: 1366px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: aquamarine;
+}
 
 /* navbar logo design */
-.logo{
-  background-image: url('https://i.pinimg.com/736x/bc/ac/a6/bcaca611921b9c4307d835ec3d0745aa.jpg') ;
-  background-clip: text; 
+.logo {
+  background-image: url("https://i.pinimg.com/736x/bc/ac/a6/bcaca611921b9c4307d835ec3d0745aa.jpg");
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   background-size: cover;
