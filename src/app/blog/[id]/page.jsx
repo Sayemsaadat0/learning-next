@@ -18,7 +18,6 @@ const BlogPost = async ({ params }) => {
     // datas is undefined i dont know why
     return (
 
-
         <div >
             <div className="hero"> 
                 <div className="hero-content flex-col lg:flex-row-reverse">
