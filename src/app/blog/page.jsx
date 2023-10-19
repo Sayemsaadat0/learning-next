@@ -13,7 +13,7 @@ async function getData() {
 
 const Blog = async () => {
     const datas = await getData()
-    console.log(datas)
+    // console.log(datas)
     return (
 
         <div className='my-10'>

@@ -2,20 +2,15 @@ import Image from 'next/image';
 import React from 'react';
 
 
-async function getData({id}) {
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, { cache: 'no-store' })
-    if (!res.ok) {
-        return console.error();
-    }
-    return res.json()
-}
 
 
 
-const BlogPost = async ({ params }) => {
-    const datas = await getData(params.id);    
-    console.log(datas); 
-    // datas is undefined i dont know why
+
+const BlogPost = async ({ params }) => { 
+    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`, { cache: 'no-store' }) 
+    const data = await res.json()  
+ 
+
     return (
 
         <div >
@@ -23,8 +18,8 @@ const BlogPost = async ({ params }) => {
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <Image src="/blog1.png" width={550} height={100} alt='730*420sized'></Image>
                     <div >
-                        <h1></h1>
-                        <p className="py-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, molestiae voluptatem fugiat nisi dolor aliquam aliquid laudantium accusantium laboriosam totam! Quam suscipit ipsa labore excepturi praesentium repellat ut nulla fugiat.</p>
+                        <h1>{data.title}</h1>
+                        <p className="py-6">{data.body}</p>
 
                         <div className="flex gap-4 items-center">
                             <Image className='rounded-full object-contain' width={48} height={48} alt='avetor' src="https://i.pinimg.com/736x/1b/73/c0/1b73c012f99894588b709ad8de2a7b0e.jpg" />
