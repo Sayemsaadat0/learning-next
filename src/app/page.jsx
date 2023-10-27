@@ -1,8 +1,6 @@
 
 import Image from "next/image";
 
-
-
 export default function Home() {
   return <div>
     <div className="md:flex items-center mx-auto justify-between px-4">

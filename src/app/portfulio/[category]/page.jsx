@@ -1,13 +1,28 @@
+"use client"
+import { items } from './data.js'
 import Image from 'next/image';
 
+const getData = (cat) => {
+    const data = items[cat]
+    console.log('data', data)
+    if (data) { return data }
+    if (!data) {
+        return 'error no data available'
+    }
 
+}
 const Category = ({ params }) => {
-    console.log(params);
+    const data = getData(params.category)
     return (
         <div>
             <h1 className='text-[#35bdcd]'>{params.category}</h1>
-
             <div>
+
+                {
+                    data.map(d => {
+                        <p>{d.id}</p>
+                    })
+                }
                 <section className=" body-font">
                     <div className="container mx-auto flex py-10 md:flex-row flex-col items-center">
                         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
