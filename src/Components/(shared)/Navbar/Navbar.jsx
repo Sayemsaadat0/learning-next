@@ -69,9 +69,6 @@ const Navbar = () => {
                             <li><Link href="/about" className="hover:text-[#35bdcd]">
                                 About
                             </Link></li>
-                            <li><Link href="/habibullah" className="hover:text-[#35bdcd]">
-                                Habibullah
-                            </Link></li>
                             <li><Link href="/contact" className="hover:text-[#35bdcd]">
                                 Contact
                             </Link></li>
